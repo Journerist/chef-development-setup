@@ -21,7 +21,7 @@ end
 puts Dir.pwd
 
 # add packages to install using package control
-# FIXME: in chef-client 12.12 whitespaces in paths doesn't work. Until it is fixed the whitespaces is removed from
+# FIXME: in chef-client 12.12 whitespaces in paths doesn't work. Until it is fixed the whitespace is removed from
 # the filename. Sadly we need to wait to create a clonable repo for sublime users without mentioning about chef because
 # this file name differs from the package controle filename.
 cookbook_file "/Users/#{currentUser}/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings" do
