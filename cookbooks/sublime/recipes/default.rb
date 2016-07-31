@@ -32,3 +32,9 @@ cookbook_file "/Users/#{currentUser}/Library/Application Support/Sublime Text 3/
   action :create
 end
 
+# symlink in ~/bin
+link "/Users/#{currentUser}/bin/subl" do
+  to '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'
+  link_type :hard
+end
+

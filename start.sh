@@ -1,1 +1,1 @@
-chef-client -z -o recipe['mas'],recipe['sublime']
+chef-client -z -o recipe['binaryLinks'],recipe['mas'],recipe['sublime']
