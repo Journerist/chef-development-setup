@@ -1,0 +1,19 @@
+{
+  "added_words":
+  [
+    "hotkeys",
+    "symlink",
+    "keymap",
+    "whitespaces",
+    "clonable"
+  ],
+  "color_scheme": "Packages/User/SublimeLinter/Mac Classic (SL).tmTheme",
+  "font_size": 10,
+  "ignored_packages":
+  [
+     "Vintage"
+  ],
+  "preserve_newlines": false,
+  "spell_check": true
+}
+ 

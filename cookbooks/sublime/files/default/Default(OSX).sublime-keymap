@@ -1,0 +1,20 @@
+[
+    //eclipse hotkeys
+    { "keys": ["shift+ctrl+r"], "command": "show_overlay", "args": { "overlay": "goto", "show_files": true } }, //open resource
+    { "keys": ["shift+ctrl+t"], "command": "show_overlay", "args": { "overlay": "goto", "show_files": true } }, //open class
+    { "keys": ["ctrl+o"], "command": "show_overlay", "args": { "overlay": "goto", "text": "@" } }, //open method
+    { "keys": ["ctrl+l"], "command": "show_overlay", "args": { "overlay": "goto", "text": ":" } }, //goto line
+    { "keys": ["alt+left"], "command": "jump_back" },
+    { "keys": ["alt+right"], "command": "jump_forward" },
+    { "keys": ["ctrl+shift+g"], "command": "tern_select_variable", "context": [{ "key": "selector", "operand": "source.js" }] }, //select all usages
+    { "keys": ["ctrl+k"], "command": "find_under" },
+    { "keys": ["ctrl+shift+k"], "command": "find_under_prev" },
+    { "keys": ["ctrl+shift+f"], "command": "js_format", "context": [{ "key": "selector", "operator": "equal", "operand": "source.js,source.json" }] },
+    { "keys": ["ctrl+."], "command": "sublimelinter_goto_error", "args": {"direction": "next"} },
+    { "keys": ["ctrl+,"], "command": "sublimelinter_goto_error", "args": {"direction": "previous"} },
+    { "keys": ["ctrl+7"],"command": "toggle_comment", "args": {"block": false} },
+    { "keys": ["ctrl+shift+7"],"command": "toggle_comment", "args": {"block": true}},
+
+    //custom hotkeys
+    { "keys": ["alt+d"], "command": "goto_definition" }
+]
