@@ -12,7 +12,6 @@ currentUser = `whoami`.chomp
 execute "chown-usr-local" do
   command "chown -R #{currentUser}:staff /usr/local"
   user "root"
-  action :nothing
 end
 
 package 'Install Git' do

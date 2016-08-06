@@ -20,10 +20,8 @@ end
 execute "install nodejs" do
   command "installer -pkg /Users/#{currentUser}/Downloads/node-v4.4.7.pkg -target /"
   user "root"
-  action :nothing
 end
 
 execute "install flow" do
   command "npm install flow -g"
-  action :nothing
 end
