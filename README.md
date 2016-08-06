@@ -2,8 +2,6 @@
 
 # Requirements
 - install sublime text 3
-- install xcode
-- install eclipse neon
 - enable 3rd party dmg installation
 
 # What offers this script
