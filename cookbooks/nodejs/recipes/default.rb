@@ -22,3 +22,8 @@ execute "install nodejs" do
   user "root"
   action :nothing
 end
+
+execute "install flow" do
+  command "npm install flow -g"
+  action :nothing
+end
