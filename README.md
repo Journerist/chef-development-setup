@@ -4,6 +4,7 @@
 - install sublime text 3
 - install xcode
 - install eclipse neon
+- enable 3rd party dmg installation
 
 # What offers this script
 - add all important sublime packages for javascript development
@@ -13,3 +14,5 @@
 
 # What you need to do after a successful installation
 - start docker
+- start kaleidoscope and enable git integration
+- start Tower and set kaleidoscope as your default merge and difference tool
