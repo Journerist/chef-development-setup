@@ -1,7 +1,6 @@
 # setup_dev_environment
 
 # Requirements
-- install sublime text 3
 - enable 3rd party dmg installation
 
 # What offers this script

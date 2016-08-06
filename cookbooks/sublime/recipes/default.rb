@@ -9,6 +9,13 @@
 
 currentUser = `whoami`.chomp
 
+# install sublime text 3
+dmg_package 'Docker' do
+  source   'https://download.sublimetext.com/Sublime%20Text%20Build%203114.dmg'
+  action   :install
+end
+
+
 # download package control
 remote_file "/Users/#{currentUser}/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package" do
   source 'https://packagecontrol.io/Package%20Control.sublime-package'
