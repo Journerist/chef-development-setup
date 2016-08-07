@@ -7,7 +7,23 @@
 # All rights reserved - Do Not Redistribute
 #
 
-dmg_package 'Docker' do
-  source   'https://download.docker.com/mac/stable/Docker.dmg'
-  action   :install
+currentUser = node['user']
+
+remote_file "/Users/#{currentUser}/Downloads/Docker.dmg" do
+  source 'https://download.docker.com/mac/stable/Docker.dmg'
+  owner "#{currentUser}"
+  group 'staff'
+  mode '0644'
+  action :create
 end
+
+execute "Mount Docker" do 
+  command "hdiutil attach /Users/#{currentUser}/Downloads/Docker.dmg"
+  user "root"
+end
+
+execute "install Docker" do
+  command "open /Volumes/Docker/Docker.app"
+  user "root"
+end
+

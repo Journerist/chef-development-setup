@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-currentUser = `whoami`.chomp
+currentUser = node['user']
 
 remote_file "/Users/#{currentUser}/Downloads/eclipse-inst-mac64.tar.gz" do
   source 'http://artfiles.org/eclipse.org//oomph/epp/neon/R/eclipse-inst-mac64.tar.gz'

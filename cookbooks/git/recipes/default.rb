@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 
-currentUser = `whoami`.chomp
+currentUser = node['user']
 
 # set rights to create a link, otherwise there will be a linking error when installing git
 execute "chown-usr-local" do

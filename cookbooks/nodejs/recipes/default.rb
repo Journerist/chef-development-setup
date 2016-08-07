@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-currentUser = `whoami`.chomp
+currentUser = node['user']
 
 remote_file "/Users/#{currentUser}/Downloads/node-v4.4.7.pkg" do
   source 'https://nodejs.org/dist/v4.4.7/node-v4.4.7.pkg'

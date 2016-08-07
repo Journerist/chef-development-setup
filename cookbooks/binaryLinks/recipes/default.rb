@@ -8,7 +8,7 @@
 #
 #
 
-currentUser = `whoami`.chomp
+currentUser = node['user']
 
 directory "/Users/#{currentUser}/bin" do
   owner "#{currentUser}"

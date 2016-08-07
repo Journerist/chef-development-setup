@@ -7,14 +7,23 @@
 # All rights reserved - Do Not Redistribute
 #
 
-currentUser = `whoami`.chomp
+currentUser = node['user']
 
 # install sublime text 3
-dmg_package 'Docker' do
+dmg_package 'Sublime Text' do
   source   'https://download.sublimetext.com/Sublime%20Text%20Build%203114.dmg'
   action   :install
 end
 
+# make sure sublime directories exist
+["/Users/#{currentUser}/Library/Application Support", "/Users/#{currentUser}/Library/Application Support/Sublime Text 3", "/Users/#{currentUser}/Library/Application Support/Sublime Text 3/Installed Packages", "/Users/#{currentUser}/Library/Application Support/Sublime Text 3/Packages", "/Users/#{currentUser}/Library/Application Support/Sublime Text 3/Packages/User"].each do |path|
+	directory path do
+		owner 'journerist'
+		group 'staff'
+		mode '0755'
+		action :create
+	end
+end
 
 # download package control
 remote_file "/Users/#{currentUser}/Library/Application Support/Sublime Text 3/Installed Packages/Package Control.sublime-package" do
