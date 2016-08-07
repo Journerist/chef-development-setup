@@ -2,6 +2,9 @@
 
 # Requirements
 - enable 3rd party dmg installation
+- install Chef sdk
+- download this repository
+- $ ./start.sh
 
 # What offers this script
 - add all important sublime packages for javascript development
