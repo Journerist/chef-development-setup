@@ -7,6 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
-zip_app_package "Kaleidoscope" do
-  source  "http://cdn.kaleidoscopeapp.com/releases/Kaleidoscope-2.1.1-219.zip"
+currentUser = node['user']
+
+execute "install kaleidoscope" do
+  command "brew cask install kaleidoscope"
+  user "#{currentUser}"
 end

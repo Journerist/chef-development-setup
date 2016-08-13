@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: docker
+# Cookbook Name:: cask
 # Recipe:: default
 #
 # Copyright 2016, YOUR_COMPANY_NAME
@@ -9,7 +9,7 @@
 
 currentUser = node['user']
 
-execute "install docker" do
-  command "brew cask install docker"
-  user "#{currentUser}"
+execute "install cask" do
+    command "brew install caskroom/cask/brew-cask"
+    user "#{currentUser}"
 end

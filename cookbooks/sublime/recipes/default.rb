@@ -10,9 +10,9 @@
 currentUser = node['user']
 
 # install sublime text 3
-dmg_package 'Sublime Text' do
-  source   'https://download.sublimetext.com/Sublime%20Text%20Build%203114.dmg'
-  action   :install
+execute "install sublime" do
+  command "brew cask install sublime-text"
+  user "#{currentUser}"
 end
 
 # make sure sublime directories exist

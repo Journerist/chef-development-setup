@@ -7,6 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
-zip_app_package "Tower" do
-  source  "https://fournova-app-updates.s3.amazonaws.com/apps/tower2-mac/315-880ab34c/Tower-2-2.4.0-315.zip"
+currentUser = node['user']
+
+execute "install tower" do
+  command "brew cask install tower"
+  user "#{currentUser}"
 end

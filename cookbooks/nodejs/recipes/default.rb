@@ -9,18 +9,10 @@
 
 currentUser = node['user']
 
-remote_file "/Users/#{currentUser}/Downloads/node-v4.4.7.pkg" do
-  source 'https://nodejs.org/dist/v4.4.7/node-v4.4.7.pkg'
-  owner "#{currentUser}"
-  group 'staff'
-  mode '0755'
-  action :create
+package 'Install Git' do
+    package_name 'git'
 end
 
-execute "install nodejs" do
-  command "installer -pkg /Users/#{currentUser}/Downloads/node-v4.4.7.pkg -target /"
-  user "root"
-end
 
 execute "install flow" do
   command "npm install flow -g"
