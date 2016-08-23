@@ -9,10 +9,10 @@
 
 currentUser = node['user']
 
-package 'Install Git' do
-    package_name 'git'
+execute "install nodejs" do
+  command "brew install node"
+  user "#{currentUser}"
 end
-
 
 execute "install flow" do
   command "npm install flow -g"
