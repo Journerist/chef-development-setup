@@ -10,3 +10,13 @@ execute "enable-fn-keys" do
   command "defaults write -g com.apple.keyboard.fnState -bool true"
   user "root"
 end
+
+execute "lower-key-pressed-interval-1" do
+  command "defaults write -g InitialKeyRepeat -int 10"
+  user "root"
+end
+
+execute "lower-key-pressed-interval-2" do
+  command "defaults write -g KeyRepeat -int 1"
+  user "root"
+end
