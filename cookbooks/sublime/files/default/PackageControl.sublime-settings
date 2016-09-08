@@ -10,6 +10,8 @@
        "JsFormat",
        "SideBarEnhancements",
        "SublimeLinter",
-       "SublimeLinter-contrib-eslint"
+       "SublimeLinter-contrib-eslint",
+       "Delete Lines",
+       "Dockerfile Syntax Highlighting"
    ]
 }
