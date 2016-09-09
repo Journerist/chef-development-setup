@@ -17,5 +17,13 @@
     { "keys": ["ctrl+f6"], "command": "next_view" },
     { "keys": ["ctrl+shift+f6"], "command": "prev_view" },
     { "keys": ["ctrl+d"], "command": "delete_lines"},
-    { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "find_in_files"} }
+    { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "keys": ["alt+f1"], "command": "chain", 
+		"args" : {
+			"commands" : [
+				["reveal_in_side_bar"],
+				["focus_side_bar"]
+			]
+		} 
+	 },
 ]
