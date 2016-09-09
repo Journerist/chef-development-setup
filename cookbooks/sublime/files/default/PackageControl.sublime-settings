@@ -12,6 +12,7 @@
        "SublimeLinter",
        "SublimeLinter-contrib-eslint",
        "Delete Lines",
-       "Dockerfile Syntax Highlighting"
+       "Dockerfile Syntax Highlighting",
+       "Chain of Command"
    ]
 }
