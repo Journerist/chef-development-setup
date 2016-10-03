@@ -9,6 +9,24 @@
   ],
   "color_scheme": "Packages/User/SublimeLinter/Mac Classic (SL).tmTheme",
   "font_size": 10,
+  
+  "file_exclude_patterns":
+	[
+		"*.java"
+	],
+	
+  "folder_exclude_patterns":
+  [
+    "node_modules",
+    ".svn",
+    ".git",
+    ".hg",
+    "CVS",
+    "jsduck",
+    "target",
+    "artifacts"
+  ],
+	
   "ignored_packages":
   [
      "Vintage"
