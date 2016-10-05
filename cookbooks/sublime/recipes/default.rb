@@ -18,7 +18,7 @@ end
 # make sure sublime directories exist
 ["/Users/#{currentUser}/Library/Application Support", "/Users/#{currentUser}/Library/Application Support/Sublime Text 3", "/Users/#{currentUser}/Library/Application Support/Sublime Text 3/Installed Packages", "/Users/#{currentUser}/Library/Application Support/Sublime Text 3/Packages", "/Users/#{currentUser}/Library/Application Support/Sublime Text 3/Packages/User"].each do |path|
 	directory path do
-		owner 'journerist'
+		owner "#{currentUser}"
 		group 'staff'
 		mode '0755'
 		action :create
